@@ -13,3 +13,23 @@ img{
     vertical-align: middle;
     width: 100%;
 }
+$flex: flex, inline-flex;
+@each $i in $flex {
+    .d-#{$i} {
+        display: $i;
+    }
+}
+
+$justify: start, center, end, evenly, space-around,  space-between;
+@each $i in $justify {
+    .justify-content-#{$i} {
+        justify-content: $i;
+    }
+}
+
+$align: start, end, center, baseline, stretch;
+@each $i in $align {
+    .align-items-#{$i} {
+        align-items: $i;
+    }
+}
