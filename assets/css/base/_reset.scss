@@ -1,3 +1,5 @@
+@import 'variables';
+
 * {
     margin: 0;
     padding: 0;
@@ -9,13 +11,39 @@ a{
 ul{
     list-style: none;
 }
-.bg{
+.bg {
     background-size: cover;
     background-position: center;
     position: relative;
     z-index: 2;
+    &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: $black;
+        opacity: .75;
+        z-index: -1;
+    }
 }
-img{
+.btn{
+    display: inline-block;
+    color: $white;
+    padding: 10px 30px;
+    font-size:20px;
+    text-transform: capitalize;
+    border-radius: 3px;
+    margin: 30px 15px;
+    &.btn-orange{
+        background-color: $orange;
+    }
+    &.btn-dark{
+        background-color: $dark;
+    }
+}
+img {
     vertical-align: middle;
     width: 100%;
 }
@@ -37,5 +65,12 @@ $align: start, end, center, baseline, stretch;
 @each $i in $align {
     .align-items-#{$i} {
         align-items: $i;
+    }
+}
+
+$text-align: left, center, right, justify;
+@each $i in $text-align {
+    .text-align-#{$i} {
+        text-align: $i;
     }
 }

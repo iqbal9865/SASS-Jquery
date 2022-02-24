@@ -32,6 +32,36 @@ ul {
   z-index: 2;
 }
 
+.bg::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #333;
+  opacity: .75;
+  z-index: -1;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  padding: 10px 30px;
+  font-size: 20px;
+  text-transform: capitalize;
+  border-radius: 3px;
+  margin: 30px 15px;
+}
+
+.btn.btn-orange {
+  background-color: orange;
+}
+
+.btn.btn-dark {
+  background-color: black;
+}
+
 img {
   vertical-align: middle;
   width: 100%;
@@ -112,6 +142,22 @@ img {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.text-align-justify {
+  text-align: justify;
 }
 
 .container,
@@ -260,6 +306,24 @@ img {
 }
 
 .header-area .menu ul li a:hover {
-  color: orange !important;
+  color: orange;
+}
+
+.banner-area {
+  height: 100vh;
+}
+
+.banner-area h1 {
+  font-size: 80px;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: #fff;
+  line-height: 100px;
+}
+
+.banner-area h4 {
+  color: #fff;
+  font-size: 24px;
+  text-transform: capitalize;
 }
 /*# sourceMappingURL=style.css.map */
