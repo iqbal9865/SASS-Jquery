@@ -522,6 +522,13 @@ img {
   margin-right: 5px;
 }
 
+.service-section .single-service {
+  background-color: #faf2f2;
+  padding: 25px 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
 .service-section .service-title h2 {
   font-size: 50px;
   text-transform: capitalize;
