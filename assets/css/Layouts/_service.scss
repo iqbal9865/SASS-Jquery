@@ -1,0 +1,45 @@
+   
+    .service-section {
+        .service-title{
+            h2{
+                font-size: 50px;
+                text-transform: capitalize;
+                font-weight: 700;
+                color: $orange;
+                line-height: 60px;
+                position: relative;
+                display: inline-block;
+                margin-bottom: 10px;
+                padding-bottom: 10px; 
+
+                //before is use for draw a stright line
+                &::before{
+                    position: absolute;
+                    content: "";
+                    width: 60px;
+                    height: 2px;
+                    background-color: $orange;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+
+                //after is use for draw thr circle shape and position it
+                &::after{
+                    position: absolute;
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: $orange;
+                    bottom: -4px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+            p{
+                font-size: 16px;
+                line-height: 30px;
+            }
+        }
+    }

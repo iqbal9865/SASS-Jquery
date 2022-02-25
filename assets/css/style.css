@@ -49,13 +49,13 @@ ul {
   color: #fff;
   padding: 10px 30px;
   font-size: 20px;
-  border-radius: 5px;
+  border-radius: 0;
   margin: 30px 15px;
   text-transform: uppercase;
 }
 
 .btn:hover {
-  border-radius: 0;
+  border-radius: 5px;
   text-decoration: underline;
 }
 
@@ -491,5 +491,76 @@ img {
   color: #fff;
   font-size: 24px;
   text-transform: capitalize;
+}
+
+.about-area .about-content h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #ff3636;
+}
+
+.about-area .about-content h4 {
+  margin-bottom: 16px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.about-area .about-content p {
+  margin-bottom: 10px;
+  text-align: justify;
+  font-size: 16px;
+}
+
+.about-area .about-content ul li {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.about-area .about-content ul li i {
+  color: #ff3636;
+  margin-right: 5px;
+}
+
+.service-section .service-title h2 {
+  font-size: 50px;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: #ff3636;
+  line-height: 60px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.service-section .service-title h2::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: #ff3636;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.service-section .service-title h2::after {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ff3636;
+  bottom: -4px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.service-section .service-title p {
+  font-size: 16px;
+  line-height: 30px;
 }
 /*# sourceMappingURL=style.css.map */
