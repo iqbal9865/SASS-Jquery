@@ -1,10 +1,23 @@
    
     .service-section {
         .single-service {
-            background-color: rgb(250, 242, 242);
+            background-color: rgb(248, 247, 247);
             padding: 25px 30px;
             margin-bottom: 30px;
             text-align: center;   
+            &:hover{
+                i{
+                    border-radius: 50%;
+                }
+            }
+            i{
+                background-color: $orange;
+                color: $white;
+                padding: 20px;
+                font-size: 20px;
+                transition: .5s;
+                margin: 10px;
+            }
         }
         .service-title{
             h2{
