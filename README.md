@@ -1,4 +1,10 @@
-# SASS-Jquery-Project
-### Developed by Iqbal Ahmed
-#### Jr. Front End Developer
-
+# SASS-Jquery
+### Uses Technology
+* SASS
+* Grid System
+* Flexbox
+* Fully Responsive
+* JQuery Plugins
+* Code Validation
+* Proper Coding
+* Netlify Host
