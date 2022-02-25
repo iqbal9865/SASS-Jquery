@@ -50,16 +50,21 @@ ul {
   padding: 10px 30px;
   font-size: 20px;
   text-transform: capitalize;
-  border-radius: 3px;
+  border-radius: 5px;
   margin: 30px 15px;
 }
 
+.btn:hover {
+  border-radius: 0;
+  text-transform: uppercase;
+}
+
 .btn.btn-orange {
-  background-color: orange;
+  background-color: #ff3636;
 }
 
 .btn.btn-dark {
-  background-color: black;
+  border: 2px solid #ff3636;
 }
 
 img {
@@ -293,8 +298,9 @@ img {
   font-size: 24px;
   font-weight: 700;
   padding: 15px 10px;
-  border: 1px solid #333;
+  border: 1px solid #ff3636;
   display: inline-block;
+  color: #ff3636;
 }
 
 .header-area .menu ul li a {
@@ -306,7 +312,7 @@ img {
 }
 
 .header-area .menu ul li a:hover {
-  color: orange;
+  color: #ff3636;
 }
 
 .banner-area {
