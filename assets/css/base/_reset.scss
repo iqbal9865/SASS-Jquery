@@ -5,10 +5,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-a{
+a {
     text-decoration: none;
 }
-ul{
+ul {
     list-style: none;
 }
 .bg {
@@ -28,7 +28,7 @@ ul{
         z-index: -1;
     }
 }
-.btn{
+.btn {
     display: inline-block;
     color: $white;
     padding: 10px 30px;
@@ -89,7 +89,7 @@ $justify: start, center, end, evenly, space-around,  space-between;
     .justify-content-#{$i} {
         justify-content: $i;
     }
-}
+} 
 
 $align: start, end, center, baseline, stretch;
 @each $i in $align {
