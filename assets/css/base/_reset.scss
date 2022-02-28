@@ -33,24 +33,50 @@ ul{
     color: $white;
     padding: 10px 30px;
     font-size:20px;
+<<<<<<< HEAD
     text-transform: capitalize;
     border-radius: 5px;
     margin: 30px 15px;
     &:hover{
         border-radius: 0;
         
+=======
+    border-radius: 0;
+    margin: 30px 15px;
+    text-transform: uppercase;
+    &:hover{
+        border-radius: 5px;
+        text-decoration: underline;
+>>>>>>> dev
     }
     &.btn-orange{
         background-color: $orange;
     }
     &.btn-dark{
-        background-color: $dark;
+        border: 2px solid $orange;
     }
 }
+
 img {
     vertical-align: middle;
     width: 100%;
 }
+
+@for $i from 1 through 10{
+    .pt-#{$i} {
+        padding-top: $i * 10px;
+    }
+    .pb-#{$i} {
+        padding-bottom: $i * 10px;
+    }
+    .mt-#{$i} {
+        margin-top: $i * 10px;
+    }
+    .mb-#{$i} {
+        margin-bottom: $i * 10px;
+    }
+}
+
 $flex: flex, inline-flex;
 @each $i in $flex {
     .d-#{$i} {
