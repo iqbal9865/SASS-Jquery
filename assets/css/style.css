@@ -656,12 +656,17 @@ img {
   margin-top: 8px;
 }
 
+.counter-area {
+  background-color: #0f1113;
+  color: #fff;
+}
+
 .counter-area .icons {
   padding: 10px 25px;
   background-color: #ff3636;
   color: #fff;
   font-size: 25px;
-  margin: 30px 0;
+  margin: 25px 0;
 }
 
 .counter-area h4 {
