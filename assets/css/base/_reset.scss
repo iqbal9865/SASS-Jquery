@@ -80,7 +80,7 @@ $justify: start, center, end, evenly, space-around,  space-between;
     .justify-content-#{$i} {
         justify-content: $i;
     }
-}
+} 
 
 $align: start, end, center, baseline, stretch;
 @each $i in $align {
