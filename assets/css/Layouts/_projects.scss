@@ -24,7 +24,7 @@
         visibility: hidden;
         transform: scale(0);
         transition: .8s;
-        &::before{
+        &::before {
             position: absolute;
             content: "";
             width: 100%;
@@ -36,12 +36,12 @@
             z-index: -1;
         }
     }
-    .project-content a{
+    .project-content a {
         color: $white;
         font-size: 30px;
         margin-bottom: 10px;
     }
-    .project-content h4{
+    .project-content h4 {
         text-transform: capitalize;
         font-weight: 700;
         font-size: 24px;
