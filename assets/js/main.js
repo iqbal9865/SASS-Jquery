@@ -5,7 +5,7 @@
       gallery: {
         enabled: true,
       },
-    });  
+    });   
     $('.counter').counterUp();
   });
 
