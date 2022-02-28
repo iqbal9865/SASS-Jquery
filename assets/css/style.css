@@ -585,13 +585,74 @@ img {
   line-height: 30px;
 }
 
-.project-section h1 {
-  font-size: 50px;
-  line-height: 60px;
-  color: #ff3636;
+.project-section .single-project {
+  background-position: center;
+  background-size: cover;
+  height: 350px;
+  cursor: pointer;
 }
 
-.project-section p {
+.project-section .single-project:hover .project-content {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.project-section .project-content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+.project-section .project-content::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #333;
+  opacity: .75;
+  z-index: -1;
+}
+
+.project-section .project-content a {
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.project-section .project-content h4 {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+}
+
+.project-section .project-content h4 span {
+  display: block;
   font-size: 16px;
+  margin-top: 8px;
 }
 /*# sourceMappingURL=style.css.map */
