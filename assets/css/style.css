@@ -44,7 +44,7 @@ ul {
   z-index: -1;
 }
 
-.btn {
+.btn, .test-section .btn-red, .test-section .btn-green, .test-section .btn-yellow {
   display: inline-block;
   color: #fff;
   padding: 10px 30px;
@@ -54,16 +54,16 @@ ul {
   text-transform: uppercase;
 }
 
-.btn:hover {
+.btn:hover, .test-section .btn-red:hover, .test-section .btn-green:hover, .test-section .btn-yellow:hover {
   border-radius: 5px;
   text-decoration: underline;
 }
 
-.btn.btn-orange {
+.btn.btn-orange, .test-section .btn-orange.btn-red, .test-section .btn-orange.btn-green, .test-section .btn-orange.btn-yellow {
   background-color: #ff3636;
 }
 
-.btn.btn-dark {
+.btn.btn-dark, .test-section .btn-dark.btn-red, .test-section .btn-dark.btn-green, .test-section .btn-dark.btn-yellow {
   border: 2px solid #ff3636;
 }
 
@@ -448,6 +448,28 @@ img {
     width: 100%;
     padding: 0 15px;
   }
+}
+
+.btn, .test-section .btn-red, .test-section .btn-green, .test-section .btn-yellow {
+  padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.test-section .btn-red {
+  background-color: red;
+  color: white;
+}
+
+.test-section .btn-green {
+  background-color: green;
+  color: white;
+}
+
+.test-section .btn-yellow {
+  background-color: yellow;
+  color: black;
 }
 
 .header-area {
