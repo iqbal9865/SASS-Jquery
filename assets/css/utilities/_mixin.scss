@@ -1,24 +1,24 @@
-@mixin btnColorStyle ($color, $bgColor) {
-    background-color: $bgColor;
-    color: $color;
-}
-.btn{
-    padding: 8px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-}
-.test-section {
-    .btn-red {
-        @extend .btn;
-        @include btnColorStyle(white, red)
-    }
-    .btn-green {
-        @extend .btn;
-        @include btnColorStyle(white, green)
-    }
-    .btn-yellow {
-        @extend .btn;
-        @include btnColorStyle(black, yellow)
-    }
-}
+// @mixin btnColorStyle ($color, $bgColor) {
+//     background-color: $bgColor;
+//     color: $color;
+// }
+// .btn{
+//     padding: 8px 20px;
+//     border: none;
+//     cursor: pointer;
+//     font-size: 16px;
+// }
+// .test-section {
+//     .btn-red {
+//         @extend .btn;
+//         @include btnColorStyle(white, red)
+//     }
+//     .btn-green {
+//         @extend .btn;
+//         @include btnColorStyle(white, green)
+//     }
+//     .btn-yellow {
+//         @extend .btn;
+//         @include btnColorStyle(black, yellow)
+//     }
+// }
